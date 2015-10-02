@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QbM-Hu-ofV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Schedule-->
+        <scene sceneID="hM6-nF-VPk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0u-B1-6aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="PageContentController" title="Schedule" id="pgf-e2-60g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FQE-Y3-hZf"/>
+                        <viewControllerLayoutGuide type="bottom" id="6n6-F5-LJC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fpO-P4-Q5U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radioCroped.png" translatesAutoresizingMaskIntoConstraints="NO" id="wkD-Ul-BQP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zB0-0s-Xhe" userLabel="Schedule"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-548.5" y="718.5"/>
+        </scene>
+        <!--Listen Live-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WESUFM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Listen Live" id="BYZ-38-t0r" customClass="ViewController" customModule="WESUFM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-N1-SoS">
-                                <rect key="frame" x="80" y="405" width="215" height="180"/>
+                                <rect key="frame" x="80" y="401" width="215" height="180"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" backgroundImage="playRound.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,6 +59,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.69918602384135475" green="0.034854808734310495" blue="0.0067337657218677939" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FZ6-Rd-61E" userLabel="Listen"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="playButton" destination="O8L-N1-SoS" id="Sqo-uK-Ger"/>
@@ -41,7 +68,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1.5" y="260.5"/>
+            <point key="canvasLocation" x="-602.5" y="-182.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xmu-1e-xtg">
+            <objects>
+                <tabBarController id="QbM-Hu-ofV" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="66A-AN-NYe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="HM7-AL-rpW"/>
+                        <segue destination="pgf-e2-60g" kind="relationship" relationship="viewControllers" id="bM0-q8-Gra"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpm-A3-R1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1485" y="229"/>
         </scene>
     </scenes>
     <resources>

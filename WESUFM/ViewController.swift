@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MediaPlayer
+import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
@@ -17,6 +19,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //playButton.setTitle("Play", forState: UIControlState.Normal)
         titleImage.image = UIImage(named: "radioCroped")
+        if NSClassFromString("MPNowPlayingInfoCenter") != nil {
+            let image:UIImage = UIImage(named: "logo_player_background")!
+            let albumArt = MPMediaItemArtwork(image: image)
+            var songInfo: NSMutableDictionary = [
+                MPMediaItemPropertyTitle: "WESU Radio",
+                MPMediaItemPropertyArtist: "88.1 fm",
+                MPMediaItemPropertyArtwork: albumArt
+            ]
+            MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = songInfo as [NSObject : AnyObject]
+        }
+        if (AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)) {
+            println("Receiving remote control events")
+            UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+        } else {
+            println("Audio Session error.")
+        }
     }
 
     override func didReceiveMemoryWarning() {
