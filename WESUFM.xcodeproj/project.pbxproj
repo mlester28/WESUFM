@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8959901BBF0A7800637566 /* play_os_x_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F89598F1BBF0A7800637566 /* play_os_x_icon.png */; };
+		5F8959921BBF0D2E00637566 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8959911BBF0D2E00637566 /* icon1.png */; };
+		5F8959941BBF109D00637566 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8959931BBF109D00637566 /* icon2.png */; };
 		5FCA42791BBE26F0002FEE36 /* radioCroped.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCA42781BBE26F0002FEE36 /* radioCroped.png */; };
 		5FCA427B1BBE3821002FEE36 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCA427A1BBE3821002FEE36 /* MediaPlayer.framework */; };
 		5FD1EA781BBB833D00AFD2FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EA771BBB833D00AFD2FC /* AppDelegate.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F89598F1BBF0A7800637566 /* play_os_x_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_os_x_icon.png; sourceTree = "<group>"; };
+		5F8959911BBF0D2E00637566 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		5F8959931BBF109D00637566 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		5FCA42781BBE26F0002FEE36 /* radioCroped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radioCroped.png; sourceTree = "<group>"; };
 		5FCA427A1BBE3821002FEE36 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5FCA427E1BBEFB8C002FEE36 /* WESUFM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WESUFM-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 		5FD1EA751BBB833D00AFD2FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5F8959911BBF0D2E00637566 /* icon1.png */,
+				5F8959931BBF109D00637566 /* icon2.png */,
+				5F89598F1BBF0A7800637566 /* play_os_x_icon.png */,
 				5FCA42781BBE26F0002FEE36 /* radioCroped.png */,
 				5FE2AAAB1BBE16630097A639 /* play.png */,
 				5FE2AABB1BBE263B0097A639 /* pauseRound.png */,
@@ -227,7 +236,10 @@
 				5FD1EA7F1BBB833D00AFD2FC /* Images.xcassets in Resources */,
 				5FE2AABE1BBE263F0097A639 /* playRound.png in Resources */,
 				5FCA42791BBE26F0002FEE36 /* radioCroped.png in Resources */,
+				5F8959941BBF109D00637566 /* icon2.png in Resources */,
 				5FE2AAAA1BBE15880097A639 /* radio.png in Resources */,
+				5F8959921BBF0D2E00637566 /* icon1.png in Resources */,
+				5F8959901BBF0A7800637566 /* play_os_x_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

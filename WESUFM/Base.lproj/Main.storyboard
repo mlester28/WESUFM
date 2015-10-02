@@ -24,11 +24,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.62745098040000002" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zB0-0s-Xhe" userLabel="Schedule"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="9fo-uj-tNp" userLabel="Schedule"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-548.5" y="718.5"/>
+            <point key="canvasLocation" x="-540.5" y="654.5"/>
         </scene>
         <!--Listen Live-->
         <scene sceneID="tne-QT-ifu">
@@ -58,8 +58,9 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.69918602384135475" green="0.034854808734310495" blue="0.0067337657218677939" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FZ6-Rd-61E" userLabel="Listen"/>
+                    <tabBarItem key="tabBarItem" title="Listen" image="icon2.png" id="19q-Yi-kTT" userLabel="Listen"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="playButton" destination="O8L-N1-SoS" id="Sqo-uK-Ger"/>
@@ -68,13 +69,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602.5" y="-182.5"/>
+            <point key="canvasLocation" x="-554.5" y="-174.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xmu-1e-xtg">
             <objects>
                 <tabBarController id="QbM-Hu-ofV" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="66A-AN-NYe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -83,14 +85,46 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="HM7-AL-rpW"/>
                         <segue destination="pgf-e2-60g" kind="relationship" relationship="viewControllers" id="bM0-q8-Gra"/>
+                        <segue destination="KE9-dH-Ysq" kind="relationship" relationship="viewControllers" id="qQy-dQ-UHR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpm-A3-R1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1485" y="229"/>
+            <point key="canvasLocation" x="-1317.5" y="284.5"/>
+        </scene>
+        <!--Archives-->
+        <scene sceneID="qVT-Bu-0Ih">
+            <objects>
+                <viewController id="KE9-dH-Ysq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T4c-oQ-ypT"/>
+                        <viewControllerLayoutGuide type="bottom" id="tW4-dP-2Jb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d0P-rl-Dkl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radioCroped.png" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-39-Ykb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="6io-yB-OZn">
+                                <rect key="frame" x="0.0" y="130" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69918602379999995" green="0.034854808729999999" blue="0.0067337657219999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Archives" id="vIL-K5-T1K"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Slc-za-QPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1269.5" y="1160.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icon2.png" width="30" height="31"/>
         <image name="playRound.png" width="290" height="304"/>
         <image name="radioCroped.png" width="1137" height="255"/>
     </resources>
