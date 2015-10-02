@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FCA42791BBE26F0002FEE36 /* radioCroped.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCA42781BBE26F0002FEE36 /* radioCroped.png */; };
 		5FD1EA781BBB833D00AFD2FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EA771BBB833D00AFD2FC /* AppDelegate.swift */; };
 		5FD1EA7A1BBB833D00AFD2FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EA791BBB833D00AFD2FC /* ViewController.swift */; };
 		5FD1EA7D1BBB833D00AFD2FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD1EA7B1BBB833D00AFD2FC /* Main.storyboard */; };
 		5FD1EA7F1BBB833D00AFD2FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD1EA7E1BBB833D00AFD2FC /* Images.xcassets */; };
 		5FD1EA821BBB833D00AFD2FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD1EA801BBB833D00AFD2FC /* LaunchScreen.xib */; };
 		5FD1EA8E1BBB833D00AFD2FC /* WESUFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EA8D1BBB833D00AFD2FC /* WESUFMTests.swift */; };
+		5FD1EA981BBB837E00AFD2FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD1EA971BBB837E00AFD2FC /* AVFoundation.framework */; };
+		5FD1EA9A1BBB840200AFD2FC /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EA991BBB840200AFD2FC /* RadioPlayer.swift */; };
+		5FE2AAAA1BBE15880097A639 /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE2AAA91BBE15880097A639 /* radio.png */; };
+		5FE2AAAC1BBE16630097A639 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE2AAAB1BBE16630097A639 /* play.png */; };
+		5FE2AABC1BBE263B0097A639 /* pauseRound.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE2AABB1BBE263B0097A639 /* pauseRound.png */; };
+		5FE2AABE1BBE263F0097A639 /* playRound.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE2AABD1BBE263F0097A639 /* playRound.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FCA42781BBE26F0002FEE36 /* radioCroped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radioCroped.png; sourceTree = "<group>"; };
 		5FD1EA721BBB833D00AFD2FC /* WESUFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WESUFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD1EA761BBB833D00AFD2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FD1EA771BBB833D00AFD2FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,12 @@
 		5FD1EA871BBB833D00AFD2FC /* WESUFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WESUFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD1EA8C1BBB833D00AFD2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FD1EA8D1BBB833D00AFD2FC /* WESUFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WESUFMTests.swift; sourceTree = "<group>"; };
+		5FD1EA971BBB837E00AFD2FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5FD1EA991BBB840200AFD2FC /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		5FE2AAA91BBE15880097A639 /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
+		5FE2AAAB1BBE16630097A639 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		5FE2AABB1BBE263B0097A639 /* pauseRound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseRound.png; sourceTree = "<group>"; };
+		5FE2AABD1BBE263F0097A639 /* playRound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playRound.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD1EA981BBB837E00AFD2FC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,7 @@
 		5FD1EA691BBB833D00AFD2FC = {
 			isa = PBXGroup;
 			children = (
+				5FD1EA971BBB837E00AFD2FC /* AVFoundation.framework */,
 				5FD1EA741BBB833D00AFD2FC /* WESUFM */,
 				5FD1EA8A1BBB833D00AFD2FC /* WESUFMTests */,
 				5FD1EA731BBB833D00AFD2FC /* Products */,
@@ -80,6 +96,7 @@
 				5FD1EA771BBB833D00AFD2FC /* AppDelegate.swift */,
 				5FD1EA791BBB833D00AFD2FC /* ViewController.swift */,
 				5FD1EA7B1BBB833D00AFD2FC /* Main.storyboard */,
+				5FD1EA991BBB840200AFD2FC /* RadioPlayer.swift */,
 				5FD1EA7E1BBB833D00AFD2FC /* Images.xcassets */,
 				5FD1EA801BBB833D00AFD2FC /* LaunchScreen.xib */,
 				5FD1EA751BBB833D00AFD2FC /* Supporting Files */,
@@ -90,6 +107,11 @@
 		5FD1EA751BBB833D00AFD2FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5FCA42781BBE26F0002FEE36 /* radioCroped.png */,
+				5FE2AAAB1BBE16630097A639 /* play.png */,
+				5FE2AABB1BBE263B0097A639 /* pauseRound.png */,
+				5FE2AABD1BBE263F0097A639 /* playRound.png */,
+				5FE2AAA91BBE15880097A639 /* radio.png */,
 				5FD1EA761BBB833D00AFD2FC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,8 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FD1EA7D1BBB833D00AFD2FC /* Main.storyboard in Resources */,
+				5FE2AABC1BBE263B0097A639 /* pauseRound.png in Resources */,
+				5FE2AAAC1BBE16630097A639 /* play.png in Resources */,
 				5FD1EA821BBB833D00AFD2FC /* LaunchScreen.xib in Resources */,
 				5FD1EA7F1BBB833D00AFD2FC /* Images.xcassets in Resources */,
+				5FE2AABE1BBE263F0097A639 /* playRound.png in Resources */,
+				5FCA42791BBE26F0002FEE36 /* radioCroped.png in Resources */,
+				5FE2AAAA1BBE15880097A639 /* radio.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD1EA9A1BBB840200AFD2FC /* RadioPlayer.swift in Sources */,
 				5FD1EA7A1BBB833D00AFD2FC /* ViewController.swift in Sources */,
 				5FD1EA781BBB833D00AFD2FC /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +439,7 @@
 				5FD1EA931BBB833D00AFD2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FD1EA941BBB833D00AFD2FC /* Build configuration list for PBXNativeTarget "WESUFMTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +448,7 @@
 				5FD1EA961BBB833D00AFD2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
