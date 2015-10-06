@@ -7,7 +7,6 @@
         <!--Schedule-->
         <scene sceneID="hM6-nF-VPk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f0u-B1-6aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="PageContentController" title="Schedule" id="pgf-e2-60g" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FQE-Y3-hZf"/>
@@ -27,6 +26,7 @@
                     <tabBarItem key="tabBarItem" title="Schedule" id="9fo-uj-tNp" userLabel="Schedule"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0u-B1-6aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-540.5" y="654.5"/>
         </scene>
@@ -42,8 +42,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radioCroped.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wza-qT-Vda">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-N1-SoS">
-                                <rect key="frame" x="80" y="401" width="215" height="180"/>
+                                <rect key="frame" x="80" y="244" width="215" height="180"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" backgroundImage="playRound.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,10 +56,6 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBM-lp-AlQ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radioCroped.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wza-qT-Vda">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
-                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.69918602384135475" green="0.034854808734310495" blue="0.0067337657218677939" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
