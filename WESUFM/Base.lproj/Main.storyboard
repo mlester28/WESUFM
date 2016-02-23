@@ -43,13 +43,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radioCroped.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wza-qT-Vda">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-N1-SoS">
-                                <rect key="frame" x="80" y="244" width="215" height="180"/>
+                                <rect key="frame" x="40" y="206" width="295" height="255"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" backgroundImage="playRound.png">
+                                <state key="normal" backgroundImage="play_simple_4.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -57,10 +57,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.69918602384135475" green="0.034854808734310495" blue="0.0067337657218677939" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Listen" image="icon2.png" id="19q-Yi-kTT" userLabel="Listen"/>
+                    <tabBarItem key="tabBarItem" title="Listen" image="icon2.png" selectedImage="icon1.png" id="19q-Yi-kTT" userLabel="Listen"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="playButton" destination="O8L-N1-SoS" id="Sqo-uK-Ger"/>
@@ -124,8 +124,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon1.png" width="50" height="51"/>
         <image name="icon2.png" width="30" height="31"/>
-        <image name="playRound.png" width="290" height="304"/>
+        <image name="play_simple_4.png" width="727" height="662"/>
         <image name="radioCroped.png" width="1137" height="255"/>
     </resources>
 </document>
